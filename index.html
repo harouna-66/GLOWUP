@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow-Up | Planner Intentionnel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">GLOW-UP</div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#features">Les Piliers</a></li>
+                    <li><a href="#gallery">Le Planner</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#ramadan-tips">Ramadan</a></li>
+                </ul>
+                <a href="#contact" class="nav-btn">Acheter</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content" data-aos="zoom-out" data-aos-duration="1500">
+                <h1>Évoluez avec intention, discipline et équilibre</h1>
+                <p>Le guide structuré pour aligner votre quotidien avec votre foi.</p>
+                <a href="#features" class="btn">Découvrir l'univers</a>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Les 4 Piliers du Glow-Up</h2>
+                <div class="features-grid">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon">✨</div>
+                        <h3>Spiritualité</h3>
+                        <p>Confiance en Allah & Vision idéale.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">📅</div>
+                        <h3>Organisation</h3>
+                        <p>Discipline, Routines et Gestion du temps.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon">🌿</div>
+                        <h3>Santé</h3>
+                        <p>Équilibre entre Sport et Alimentation.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="feature-icon">🧠</div>
+                        <h3>Mindset</h3>
+                        <p>Confiance en soi et engagement personnel.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container about-flex">
+                <div class="profile-container" data-aos="fade-right">
+                    <div class="profile-circle">
+                        <img src="img1.webp" alt="Fatoumata Doumbia" class="profile-img">
+                    </div>
+                </div>
+                <div class="about-content" data-aos="fade-left">
+                    <h2 class="section-title">L'Âme de Glow-Up</h2>
+                    <div class="text-box">
+                        <p>Je m’appelle <strong>Fatoumata Doumbia</strong>, étudiante en médecine au Maroc, malienne d'origine.</p>
+                        <p>Motivée par une vie réussie et le développemnt personnel, je cherche à trouver l'équilibre entre la vie mondaine et la religion, à travers la discipline, l'effort et la constance.</p>
+                        <blockquote class="modern-quote">
+                           
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Aperçu du Planner</h2>
+                <div class="image-grid">
+                    <div class="image-item" data-aos="zoom-in" data-aos-delay="100"><img src="img3.jpg"></div>
+                    <div class="image-item" data-aos="zoom-in" data-aos-delay="200"><img src="img4.jpg"></div>
+                    <div class="image-item" data-aos="zoom-in" data-aos-delay="300"><img src="img5.jpg"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ramadan-tips" class="ramadan-minimal" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title">Focus Ramadan</h2>
+                <p class="ramadan-intro">Vivre le mois sacré avec conscience.</p>
+                <div class="ramadan-flex">
+                    <div class="ramadan-item">
+                        <h4>01. La Niyyah</h4>
+                        <p>Définir ses intentions spirituelles.</p>
+                    </div>
+                    <div class="ramadan-item">
+                        <h4>02. Structure</h4>
+                        <p>Organiser son temps d'adoration.</p>
+                    </div>
+                    <div class="ramadan-item">
+                        <h4>03. Constance</h4>
+                        <p>Maintenir l'effort sur 30 jours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="spiritual-reminder" data-aos="fade-in">
+            <div class="reminder-card">
+                <p id="inspiration-text">"Chargement..."</p>
+                <p id="inspiration-source" class="context"></p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section" data-aos="fade-up">
+            <div class="container">
+                <h2>Obtenir mon Planner</h2>
+                <div class="contact-form">
+                    <input type="text" id="user-name" placeholder="Votre prénom" required>
+                    <textarea id="user-message" placeholder="Votre message..."></textarea>
+                    <button onclick="sendToWhatsApp()" class="whatsapp-btn">Envoyer sur WhatsApp ✨</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="modern-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <span class="footer-logo">GLOW-UP</span>
+                <p>Discipline, Constance, Équilibre.</p>
+            </div>
+            <div class="footer-socials">
+                <h4>Contact</h4>
+                <p>Email : fatimsante04@gmail.com</p>
+                <p>Instagram : fit_fatou_</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Glow-Up by Fatoumata Doumbia.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>
