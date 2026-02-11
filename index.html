@@ -74,9 +74,9 @@
                     <h2 class="section-title">L'Âme de Glow-Up</h2>
                     <div class="text-box">
                         <p>Je m’appelle <strong>Fatoumata Doumbia</strong>, étudiante en médecine au Maroc, malienne d'origine.</p>
-                        <p>Motivée par une vie réussie et le développemnt personnel, je cherche à trouver l'équilibre entre la vie mondaine et la religion, à travers la discipline, l'effort et la constance.</p>
+                        <p>Motivée par une vie réussie et le développement personnel, je cherche à trouver l'équilibre entre la vie mondaine et la religion, à travers la discipline, l'effort et la constance.</p>
                         <blockquote class="modern-quote">
-                           
+                            "Chercher l'équilibre entre la vie mondaine et la religion, à travers la discipline et l'effort."
                         </blockquote>
                     </div>
                 </div>
@@ -87,9 +87,9 @@
             <div class="container">
                 <h2 class="section-title" data-aos="fade-up">Aperçu du Planner</h2>
                 <div class="image-grid">
-                    <div class="image-item" data-aos="zoom-in" data-aos-delay="100"><img src="img3.jpg"></div>
-                    <div class="image-item" data-aos="zoom-in" data-aos-delay="200"><img src="img4.jpg"></div>
-                    <div class="image-item" data-aos="zoom-in" data-aos-delay="300"><img src="img5.jpg"></div>
+                    <div class="image-item" data-aos="zoom-in" data-aos-delay="100"><img src="img3.jpg" alt="Aperçu 1"></div>
+                    <div class="image-item" data-aos="zoom-in" data-aos-delay="200"><img src="img4.jpg" alt="Aperçu 2"></div>
+                    <div class="image-item" data-aos="zoom-in" data-aos-delay="300"><img src="img5.jpg" alt="Aperçu 3"></div>
                 </div>
             </div>
         </section>
@@ -97,19 +97,19 @@
         <section id="ramadan-tips" class="ramadan-minimal" data-aos="fade-up">
             <div class="container">
                 <h2 class="section-title">Focus Ramadan</h2>
-                <p class="ramadan-intro">Vivre le mois sacré avec conscience.</p>
+                <p class="ramadan-intro">Vivre le mois sacré avec conscience et structure.</p>
                 <div class="ramadan-flex">
                     <div class="ramadan-item">
                         <h4>01. La Niyyah</h4>
-                        <p>Définir ses intentions spirituelles.</p>
+                        <p>Définir ses intentions spirituelles avec clarté.</p>
                     </div>
                     <div class="ramadan-item">
                         <h4>02. Structure</h4>
-                        <p>Organiser son temps d'adoration.</p>
+                        <p>Organiser son temps entre adoration et quotidien.</p>
                     </div>
                     <div class="ramadan-item">
                         <h4>03. Constance</h4>
-                        <p>Maintenir l'effort sur 30 jours.</p>
+                        <p>Maintenir ses efforts sur la durée grâce au suivi.</p>
                     </div>
                 </div>
             </div>
@@ -117,7 +117,7 @@
 
         <section class="spiritual-reminder" data-aos="fade-in">
             <div class="reminder-card">
-                <p id="inspiration-text">"Chargement..."</p>
+                <p id="inspiration-text">"Chargement de votre rappel..."</p>
                 <p id="inspiration-source" class="context"></p>
             </div>
         </section>
@@ -127,8 +127,10 @@
                 <h2>Obtenir mon Planner</h2>
                 <div class="contact-form">
                     <input type="text" id="user-name" placeholder="Votre prénom" required>
-                    <textarea id="user-message" placeholder="Votre message..."></textarea>
-                    <button onclick="sendToWhatsApp()" class="whatsapp-btn">Envoyer sur WhatsApp ✨</button>
+                    <textarea id="user-message" placeholder="Votre question ou message pour Fatoumata..."></textarea>
+                    <button onclick="sendEmail()" class="whatsapp-btn">
+                        Envoyer un e-mail ✨
+                    </button>
                 </div>
             </div>
         </section>
@@ -143,17 +145,23 @@
             <div class="footer-socials">
                 <h4>Contact</h4>
                 <p>Email : fatimsante04@gmail.com</p>
-                <p>Instagram : fit_fatou_</p>
+                <p>Instagram : @fit_fatou_</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Glow-Up by Fatoumata Doumbia.</p>
+            <p>&copy; 2026 Glow-Up by Fatoumata Doumbia. Tous droits réservés.</p>
         </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="script.js"></script>
-    <script>AOS.init({ duration: 1000, once: true });</script>
+    <script>
+        AOS.init({ 
+            duration: 1000, 
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>
